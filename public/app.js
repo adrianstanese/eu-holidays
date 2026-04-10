@@ -575,7 +575,7 @@ if(vw==='ta')html+=renderTeamAlerts();
 if(vw==='cmp')html+=renderCompare();
 // Bottom buttons
 html+=`<div class="bottom-btns"><button class="bbtn bbtn-pdf" onclick="exportPDF(state.sel,state.yr)">${t.btn_pdf}</button><button class="bbtn bbtn-ics" onclick="generateICS(state.sel,state.yr)">${t.btn_ics}</button><button class="bbtn bbtn-heat" onclick="setState({modal:'heat'})">${t.btn_heat}</button><button class="bbtn bbtn-all" onclick="setState({modal:'all',acOpen:null})">${t.btn_all}</button></div>`;
-html+=`<footer>Verified holiday data for ${CT.length} countries · officeholidays.com · GOV.UK · timeanddate.com</footer>`;
+html+=`<footer>Built by <a href="https://linkedin.com/in/stanese/" target="_blank" style="color:var(--ac);text-decoration:none;font-weight:600">Adrian Stanese</a></footer>`;
 if(modal==='heat')html+=renderHeatModal(yr);
 if(modal==='all')html+=renderAllModal(yr);
 document.getElementById('app').innerHTML=html;
